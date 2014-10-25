@@ -1,7 +1,8 @@
 exports.chop = function (integer, sortedArray) {
   var integerIndex,
       length,
-      choppedLength;
+      choppedLength,
+      i;
 
   length = sortedArray.length;
 
@@ -11,7 +12,6 @@ exports.chop = function (integer, sortedArray) {
   choppedLength = length;
   integerIndex  = Math.floor(length / 2);
 
-  // i counts the number of iterations and acts as a failsafe for infinite loops
   i = 0;
 
   do {
@@ -36,7 +36,7 @@ exports.chop = function (integer, sortedArray) {
 
     i++;
 
-    // "i !== length" acts as a failsafe to avoid non ending loops if the integer is not found
+    // "i !== length" acts as a failsafe to avoid infinite loops if the integer is not found
   } while(sortedArray[integerIndex] !== integer && i !== length);
 
   // the integer is not in the sorted array or something is wrong
