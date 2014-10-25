@@ -1,0 +1,22 @@
+{
+  "name": "karate-chop",
+  "version": "1.0.0",
+  "description": "My take on the [binary chop kata](http://codekata.com/kata/kata02-karate-chop/).",
+  "main": "index.js",
+  "dependencies": {
+    "nodeunit": "^0.9.0"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kata",
+    "binarychop",
+    "binarysearch"
+  ],
+  "author": "Fotis Koutoupas",
+  "license": "ISC"
+}
