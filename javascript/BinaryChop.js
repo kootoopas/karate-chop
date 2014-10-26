@@ -19,7 +19,6 @@ exports.chop = function (integer, sortedArray) {
     choppedLength = Math.floor(choppedLength / 2);
 
     if(sortedArray[integerIndex] < integer) {
-      // console.log('chopedLength ' + choppedLength + ' got added to integerIndex ' + integerIndex);
       integerIndex += choppedLength;
 
       // check to avoid off by one error in which integerIndex is equal
@@ -28,7 +27,6 @@ exports.chop = function (integer, sortedArray) {
         integerIndex--;
     }
     else if(sortedArray[integerIndex] > integer) {
-      // console.log('chopedLength ' + choppedLength + ' got subtracted from integerIndex ' + integerIndex);
       integerIndex -= choppedLength;
     }
     else
