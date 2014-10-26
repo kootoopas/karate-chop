@@ -37,9 +37,9 @@ exports.chop = function (integer, sortedArray) {
     i++;
 
     // "i !== length" acts as a failsafe to avoid infinite loops if the integer is not found
-  } while(sortedArray[integerIndex] !== integer && i !== length);
+  } while(sortedArray[integerIndex] !== integer && i < length);
 
-  // the integer is not in the sorted array or something is wrong
+  // the integer is not in the sorted array
   if(sortedArray[integerIndex] !== integer)
     return -1;
 

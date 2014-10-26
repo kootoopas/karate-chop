@@ -1,4 +1,4 @@
-var bc = require('../javascript/chop');
+var bc = require('../javascript/BinaryChop');
 
 module.exports = {
   emptyArrayTest: function (test) {
@@ -10,7 +10,7 @@ module.exports = {
   },
 
   nonExistantIntsTest: function (test) {
-    console.log('\nShould return -1 in every test.');
+    console.log('\nShould return -1 in every test:');
 
     test.equal(-1, bc.chop(3, [1]));
 
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   existantIntsTest: function (test) {
-    console.log('\nShould return the array index of the requested integer in every test.');
+    console.log('\nShould return the array index of the requested integer in every test:');
 
     test.equal(0,  bc.chop(1, [1]));    
 
